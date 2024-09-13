@@ -1,5 +1,7 @@
 package com.example.databindingdemo.datamodel;
 
+import androidx.databinding.Bindable;
+
 public class Person {
     private String name;
     private int age;
@@ -10,7 +12,7 @@ public class Person {
         this.age = age;
         this.email = email;
     }
-
+    @Bindable
     public String getName() {
         return name;
     }
@@ -19,6 +21,7 @@ public class Person {
         this.name = name;
     }
 
+    @Bindable
     public int getAge() {
         return age;
     }
@@ -27,6 +30,7 @@ public class Person {
         this.age = age;
     }
 
+    @Bindable
     public String getEmail() {
         return email;
     }
